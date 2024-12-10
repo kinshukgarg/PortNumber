@@ -1,0 +1,143 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* App Container */
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Main Title */
+.app-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 40px;
+  color: #333;
+}
+
+/* Form Styles */
+.scan-form {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.domain-input {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 300px;
+  margin-right: 15px;
+  outline: none;
+}
+
+.domain-input:focus {
+  border-color: #5c6bc0;
+}
+
+.scan-button {
+  padding: 12px 25px;
+  background-color: #5c6bc0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scan-button:hover {
+  background-color: #3f4a94;
+}
+
+.scan-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.scan-status {
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Results Styles */
+.results-container {
+  margin-top: 40px;
+}
+
+.subdomains, .ports, .httpx-results {
+  margin-bottom: 30px;
+}
+
+.subdomains h3, .ports h3, .httpx-results h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #444;
+}
+
+.subdomains ul, .ports ul, .httpx-results ul {
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.results-container li {
+  border-bottom: 1px solid #eee;
+  padding: 8px 0;
+}
+
+.results-container li:last-child {
+  border-bottom: none;
+}
+
+.results-container li span {
+  color: #5c6bc0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .domain-input {
+      width: 220px;
+  }
+
+  .scan-button {
+      padding: 10px 20px;
+      font-size: 14px;
+  }
+}
+
+/* Loading spinner for button */
+.fas.fa-spinner.fa-spin {
+  margin-right: 10px;
+  font-size: 20px;
+}
